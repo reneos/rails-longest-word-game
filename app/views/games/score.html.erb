@@ -1,0 +1,13 @@
+<ul>
+  <% @letters.each do |letter| %>
+    <li><%= letter %></li>
+  <% end %>
+</ul>
+
+<p>You tried: <strong><%= @answer %></strong></p>
+<% if @valid %>
+  <p>Nice! Your score is <%= @score %>.</p>
+<% else %>
+  <p>Oh no! <%= @answer %> is not a valid word. Your score is <%= @score %>.</p>
+<% end %>
+<%= link_to 'Play again?', new_path %>
