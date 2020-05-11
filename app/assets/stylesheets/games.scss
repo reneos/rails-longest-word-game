@@ -57,9 +57,14 @@ input, button {
   padding: 8px 16px;
   font-family: 'roboto mono', sans-serif;
   font-size: 1.2em;
+  border: 1px solid $light-purple;
+  border-radius: 5px;
 }
 
 button {
   background-color: $lightest-purple;
-  border: none;
+}
+
+button:hover {
+  background-color: $light-purple;
 }

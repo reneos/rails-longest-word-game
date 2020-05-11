@@ -14,6 +14,6 @@
   <p>What is the longest word you can find?</p>
   <%= hidden_field_tag 'letters', @letters %>
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <input type="text" name="answer">
+  <input type="text" name="answer" required>
   <button type="submit">Play</button>
 </form>
